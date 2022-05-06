@@ -22,13 +22,6 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        textView = findViewById(R.id.textView);
-
-        SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
-        String textInput = sharedPreferences.getString("textInput", "");
-
-        textView.setText(textInput);
-
         Button button = findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getApplicationContext().getSharedPreferences("SharedPreferences", Context.MODE_PRIVATE);
         String textInput = sharedPreferences.getString("textInput", "");
 
+        textView = findViewById(R.id.textView);
         textView.setText(textInput);
     }
 }
