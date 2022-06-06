@@ -40,6 +40,7 @@ public class MainActivity2 extends AppCompatActivity {
     }
 }
 ```
+
 ```
 protected void onResume() {
         super.onResume();
@@ -52,6 +53,6 @@ protected void onResume() {
 ```
 
 
-
 ![](Skärmdump1.png)
+
 ![](Skärmdump2.png)
